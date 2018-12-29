@@ -19,6 +19,7 @@
 }
 a{
   font-size:20px;
+  cursor: pointer;
 }
 
 .top-content{
@@ -168,6 +169,7 @@ footer{
         margin-top:25px;
         padding:2px;
       }
+      
 
 
 
@@ -175,6 +177,17 @@ footer{
      .header-text {
      	color:#85144B;
      }
+     .connect{
+      font-size:20px;
+    }
+    .knowledge{
+      font-size: 17px;
+    }
+    .anchor{
+      font-size: 16px;
+    }
+    
+
 }
 
 
@@ -220,10 +233,34 @@ footer{
       display: block;
       padding: 5px;
     }
+    .top-content{
+      font-size:21px;
+      margin-top:25px;
+      padding:2px;
+    }
+    .connect{
+      font-size:35px;
+    }
+    .knowledge{
+      font-size: 25px;
+    }
+    .anchor{
+      font-size: 20px;
+    }
+    
+
 
 }
 
   @media(min-width: 1010px){
-
+    .connect{
+      font-size:35px;
+    }
+    .knowledge{
+      font-size: 25px;
+    }
+    .anchor{
+      font-size: 20px;
+    }
 }
 
