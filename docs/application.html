@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Application</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/application.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/country-region-dropdown-menu/1.2.2/geodatasource-countryflag.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="gettext" type="application/x-po" href="languages/en/LC_MESSAGES/en.po" />
+    <!-- <script type="text/javascript" src="assets/js/Gettext.js"></script> -->
+</head>
+<body>
+	<div align="center"><h2>MEMBERSHIP APPLICATION FORM</h2></div>
+	<div class="centralise">
+		<form class="md-form" action="https://formspree.io/david.odeyinka@yahoo.com" method="POST">
+		  <!-- Drop down for selecting membership  -->
+		  <div class="form-group col-5">
+		    <label for="selectMemebership">Select Membership Type</label>
+		    <select class="form-control" name="select_membership" id="selectMemebership">
+		      <option>Student</option>
+		      <option>Ordinary</option>
+		      <option>Associate</option>
+		      <option>Institutional</option>
+		  	</select>
+  		  </div>
+  		  <!-- Full Name --> 
+  		  <div class="form-group col-6">
+		    <label for="fullName">Full Name</label>
+		    <input type="text" class="form-control" name="full_name" id="fullName" placeholder="Enter Full Name">
+		  </div>
+		  <!-- Gender and Date of Birth -->
+		  <div class="form-group row editRow">
+		  	<div class="col-3">
+			  <div class="form-check form-check-inline">
+			  	 <label class="form-check-label" for="checkboxMale">Male</label>
+			     <input class="form-check-input" type="radio" id="checkboxMale" name="inlineRadioOptions" value="option1">
+			  </div>
+			  <div class="form-check form-check-inline">
+			  	 <label class="form-check-label" for="checkboxFemale">Female</label>
+			     <input class="form-check-input" type="radio" id="checkboxFemale" name="inlineRadioOptions" value="option1">
+			  </div>
+			</div>
+			<div class="col-4">
+			    <label for="dob">Date of Birth</label>
+			    <input type="text" class="form-control" name="date_of_birth" id="dob" placeholder="Enter Date of Birth">
+			  </div>
+		   </div>
+
+		  <!-- Title or position -->
+		   <div class="form-group col-6">
+			    <label for="title">Title or Position</label>
+			    <input type="text" class="form-control" name="application" id="title" placeholder="Enter Title or Position">
+		   </div>
+		   <!-- Institution or Company -->
+		   <div class="form-group col-6">
+			    <label for="institution">Institution or Company</label>
+			    <input type="text" class="form-control" name="application" id="institution" placeholder="Enter Institution or Company">
+		   </div>
+		    <!-- Address-->
+		   <div class="form-group col-6">
+			    <label for="address">Address</label>
+			    <input type="text" class="form-control" name="application" id="address" placeholder="Enter Address">
+		   </div>
+		   <!-- City, Town and Zip or Postal Code -->
+		   <div class="form-group row editRow">
+			  <div class="col-3">
+			    <label for="city">City</label>
+			    <input class="form-control" name="application" id="city" type="text" placeholder="Enter City">
+			  </div>
+			  <div class="col-3">
+			    <label for="town">Town</label>
+			    <input class="form-control" name="application" id="town" type="text" placeholder="Enter Town">
+			  </div>
+			  <div class="col-3">
+			    <label for="zip">Zip or Postal Code</label>
+			    <input class="form-control" name="application" id="zip" type="number" placeholder="Enter Zip or Postal Code">
+			  </div>
+		   </div>
+		   <!-- Country Drop down Menu -->
+		   <div class="form-group col-5">
+		   	<label for="country">Country</label>
+		   <select id="ddlCars" size="3" class=" form-control gds-cr gds-countryflag" country-data-region-id="gds-cr-one" data-language="en"></select> 
+
+			<!-- </select> -->
+
+			<!-- Region: <select id="gds-cr-four"></select> -->
+		   </div>
+		   <!-- Telephone, Home and Work -->
+		   <div class="form-group row editRow">
+			  <div class="col-3">
+			    <label for="telephone">Telephone</label>
+			    <input  type="tel" name="telphone" class="form-control telphone" id="telephone" type="text" placeholder="Enter Telephone Number">
+			    <span class="input-group-addon">Tel</span>		
+			  </div>
+			  <div class="col-3">
+			    <label for="home">Home</label>
+			    <input class="form-control" name="application" id="home" type="text" placeholder="Enter Home Number">
+			  </div>
+			  <div class="col-3">
+			    <label for="work">Work</label>
+			    <input class="form-control" name="application" id="work" type="text" placeholder="Enter Work Number">
+			  </div>
+		   </div>
+		   <!-- Email, Personal and Work -->
+		   <div class="form-group row editRow">
+			  <div class="form-group col-3">
+			    <label for="emailAddress">Email address</label>
+			    <input type="email" class="form-control" name="application" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter email">
+			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		     </div>
+			  <div class="col-3">
+			    <label for="personal">Personal</label>
+			    <input class="form-control" name="application" id="personal" type="email" placeholder="">
+			  </div>
+			  <div class="col-3">
+			  	<label for="work">Work</label>
+			    <input class="form-control" name="application" id="work" type="email" placeholder="">
+			  </div>
+		   </div>
+		   <div class="form-group col-5">
+		     <input class="form-control" name="application" type="text" placeholder="Education: For each degree obtained please provide:" readonly>
+		     <div>
+				    <label for="institution">(a) Institution, Place, Country</label>
+				    <input class="form-control" name="application" id="institution" type="text" placeholder="Enter Institution, Place and Country">
+			  </div>
+			  <div>
+			    	<label for="yog">(b) Year of Graduation</label>
+				    <input class="form-control" name="application" id="yog" type="number" placeholder="Enter Year of graduation">
+			  </div>
+			   <div>
+				    <label for="degree">(c) Degree Obtained</label>
+				    <input class="form-control" name="application" id="degree" type="text" placeholder="Enter Degree Obtained">
+			  </div>
+			  <div>
+				    <label for="qualifications">(d) Other post baccalaureate/Fellowship qualifications</label>
+				    <input class="form-control" name="application" id="qualifications" type="text" placeholder="Enter Other Qualifications">
+			  </div>
+		   </div>
+		  <div class="form-group col-6">
+		   <input class="form-control" name="application" type="text" placeholder="Do you use/care for lab animals as part of your current daily work schedule? " readonly>
+		   <div class="form-check form-check-inline">
+			  	 <label class="form-check-label" for="checkboxYes">Yes</label>
+			     <input class="form-check-input" type="radio" id="checkboxYes" name="inlineRadioOptions" value="option1">
+			  </div>
+			  <div class="form-check form-check-inline">
+			  	 <label class="form-check-label" for="checkboxNo">No</label>
+			     <input class="form-check-input" type="radio" id="checkboxNo" name="inlineRadioOptions" value="option1">
+			  </div>
+		  </div>
+		  <div class="form-group col-6">
+		   <input class="form-control" name="application" type="text" placeholder="If No, please provide a statement of your interest in lab animals" readonly>
+		   <div>
+		   	<label for="exampleFormControlTextarea1">Satement of Interest</label>
+    		<textarea class="form-control" name="application" id="exampleFormControlTextarea1" row editRows="3"></textarea>
+		   </div>
+		 </div>
+		  <div class="form-group col-7">
+		   <input class="form-control" name="application" type="text" placeholder="Have you used/cared for lab animals as part of your daily work schedule in the past?" readonly>
+		    <div class="form-check form-check-inline">
+			  	 <label class="form-check-label" for="checkboxDailyYes">Yes</label>
+			     <input class="form-check-input" type="radio" id="checkboxDailyYes" name="inlineRadioOptions" value="option1">
+			  </div>
+			  <div class="form-check form-check-inline">
+			  	 <label class="form-check-label" for="checkboxDailyNo">No</label>
+			     <input class="form-check-input" type="radio" id="checkboxDailyNo" name="inlineRadioOptions" value="option1">
+			  </div>
+		  </div>
+		  <div class="form-group col-6">
+		   <input class="form-control" name="application" type="text" placeholder="If yes, please state, Institution and Place, Duration" readonly>
+		    <div class="form-group row editRow">
+			  <div class="col-4">
+			    <label for="inst">Institution</label>
+			    <input class="form-control" name="application" id="inst" type="text" placeholder="Enter Institution">
+			  </div>
+			  <div class="col-4">
+			    <label for="place">Place</label>
+			    <input class="form-control" name="application" id="place" type="text" placeholder="Enter Place">
+			  </div>
+			  <div class="col-4">
+			    <label for="duration">Duration</label>
+			    <input class="form-control" name="application" id="duration" type="text" placeholder="Enter Duration">
+			  </div>
+		   </div>
+		 </div>
+		 <div class="form-group col-6">
+		   <input class="form-control" name="application" type="text" placeholder="Have you attended any laboratory animal welfare training?" readonly>
+		    <div class="form-check form-check-inline">
+			  	 <label class="form-check-label" for="checkboxWelfareYes">Yes</label>
+			     <input class="form-check-input" type="radio" id="checkboxWelfareYes" name="inlineRadioOptions" value="option1">
+			  </div>
+			  <div class="form-check form-check-inline">
+			  	 <label class="form-check-label" for="checkboxWelfareNo">No</label>
+			     <input class="form-check-input" type="radio" id="checkboxWelfareNo" name="inlineRadioOptions" value="option1">
+			  </div>
+		  </div>
+		  <div class="form-group col-6">
+		   <input class="form-control" name="application" type="text" placeholder="If yes, please state" readonly>
+		    <div class="form-group row editRow">
+			  <div class="col-4">
+			    <label for="event">Event</label>
+			    <input class="form-control" name="application" id="event" type="text" placeholder="Event">
+			  </div>
+			  <div class="col-4">
+			    <label for="date">Date</label>
+			    <input class="form-control" name="application" id="date" type="text" placeholder="Date">
+			  </div>
+			  <div class="col-4">
+			    <label for="pla">Place</label>
+			    <input class="form-control" name="application" id="pla" type="number" placeholder="Place">
+			  </div>
+		   </div>
+		 </div>
+		  <div class="form-group col-6">
+		   <input class="form-control" name="application" type="text" placeholder="Does your institution have an animal facility?" readonly>
+		    <div class="form-check form-check-inline">
+			  	 <label class="form-check-label" for="checkboxFacYes">Yes</label>
+			     <input class="form-check-input" type="radio" id="checkboxFacYes" name="inlineRadioOptions" value="option1">
+			  </div>
+			  <div class="form-check form-check-inline">
+			  	 <label class="form-check-label" for="checkboxFacNo">No</label>
+			     <input class="form-check-input" type="radio" id="checkboxFacNo" name="inlineRadioOptions" value="option1">
+			  </div>
+		  </div>
+		  <div class="form-group col-6">
+			  	<div>Please provide full names, email address and telephone of two referees<br>
+			     i.	A current member of ACURET<br>
+			     ii.	Someone who knows about your work with animals<br>
+			     iii.	If you are a student, HOD/Faculty advisor/Supervisor should be the second referee.
+	           </div>
+		  </div>
+		  <div class="form-group col-6">
+		   <input class="form-control" name="application" type="text" placeholder="Referee 1" readonly>
+		    <div class="form-group row editRow">
+			  <div class="col-4">
+			    <label for="fn">Full Name</label>
+			    <input class="form-control" name="application" id="fn" type="text" placeholder="Full Name">
+			  </div>
+			  <div class="col-4">
+			    <label for="em">Email Address</label>
+			    <input class="form-control" name="application" id="em" type="text" placeholder="Eail Address">
+			  </div>
+			  <div class="col-4">
+			    <label for="tele">Telephone</label>
+			    <input class="form-control" name="application" id="tele" type="text" placeholder="Telephone">
+			  </div>
+		   </div>
+		 </div>
+		 <div class="form-group col-6">
+		   <input class="form-control" name="application" type="text" placeholder="Referee 2" readonly>
+		    <div class="form-group row editRow">
+			  <div class="col-4">
+			    <label for="fn">Full Name</label>
+			    <input class="form-control" name="application" id="fn" type="text" placeholder="Full Name">
+			  </div>
+			  <div class="col-4">
+			    <label for="em">Email Address</label>
+			    <input class="form-control" name="application" id="em" type="text" placeholder="Eail Address">
+			  </div>
+			  <div class="col-4">
+			    <label for="tele">Telephone</label>
+			    <input class="form-control" name="application" id="tele" type="text" placeholder="Telephone">
+			  </div>
+		   </div>
+		 </div>
+		 <div class="form-group col-6">
+			  	Please attach the following supporting documents (pdf)<br>
+			i.	Current and updated Curriculum Vitae<br>
+			ii.	Animal welfare training certificates (if any)<br>
+			iii.	Two representative publications (if any and relevant)
+
+		  </div>
+		  <div class="form-group col-6">
+		    <input class="form-control" name="application" type="text" placeholder="Current and updated Curriculum Vitae" readonly><br>
+		    <input type="file" accept="application/pdf" class="form-control-file">
+		  </div>
+		  <div class="form-group col-6">
+		    <input class="form-control" name="application" type="text" placeholder="Animal welfare training certificates" readonly><br>
+		    <input type="file" accept="application/pdf" class="form-control-file">
+		  </div>
+		  <div class="form-group row editRow">
+		  	<div class="col-3">
+		    	<input class="form-control" name="application" type="text" placeholder="Publication 1" readonly><br>
+		    	<input type="file" accept="application/pdf" class="form-control-file">
+			</div>
+			<div class="col-3">
+		    	<input class="form-control" name="application" type="text" placeholder="Publication 2" readonly><br>
+		    	<input type="file" accept="application/pdf" class="form-control-file">
+			</div>
+		  </div> 
+		  
+		  <!-- <div class="form-check">
+		    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+		    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+		  </div> -->
+		  <button align="center" type="submit" class="btn btn-primary btn-lg editBut">Submit</button>
+		</form>
+	</div>
+
+			
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gettext.js/0.6.0/gettext.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/country-region-dropdown-menu/1.2.2/geodatasource-cr.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</body>
+</html>
