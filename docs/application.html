@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="gettext" type="application/x-po" href="languages/en/LC_MESSAGES/en.po" />
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script>UPLOADCARE_PUBLIC_KEY = "demopublickey";</script>
+	<script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js" charset="utf-8"></script>
     <!-- <script type="text/javascript" src="assets/js/Gettext.js"></script> -->
 </head>
 <header>
@@ -324,21 +326,23 @@
 
 		  <div class="form-group col-10">
 		    <input class="form-control" name="Current and updated Curriculum Vitae" type="text" placeholder="Current and updated Curriculum Vitae" readonly><br>
-		    <input name="Uploaded CV" type="file" accept="application/pdf" class="form-control-file">
+		    <!-- <input name="Uploaded CV"  onchange="validatePDF(this)" type="file" accept="application/pdf" class="form-control-file"> -->
+		    <input type="hidden" onchange="validatePDF(this)" role="uploadcare-uploader" name="Uploaded CV" accept="application/pdf" />
 		  </div>
 		  <div class="form-group col-10">
 		    <input class="form-control" name="Animal welfare training certificates" type="text" placeholder="Animal welfare training certificates" readonly><br>
-		    <input type="file" name="Uploaded Animal welfare training certificates" accept="application/pdf" class="form-control-file">
+		   <input type="hidden" onchange="validatePDF(this)" role="uploadcare-uploader" name="Uploaded Animal welfare training certificates" accept="application/pdf" />
 		  </div>
 		  <div class="form-group row editRow">
 		  	<div class="col-5">
 		    	<input class="form-control" name="Publication 1" type="text" placeholder="Publication 1" readonly><br>
-		    	<input type="file" name="Uploaded Publication 1" accept="application/pdf" class="form-control-file">
+		    	<!-- <input type="file" name="Uploaded Publication 1" accept="application/pdf" class="form-control-file"> -->
+		    	<input type="hidden" onchange="validatePDF(this)" role="uploadcare-uploader" name="Uploaded Publication 1" accept="application/pdf" />
 			</div>
 			<div class="col-5">
 		    	<input class="form-control" name="Publication 2" type="text" placeholder="Publication 2" readonly><br>
-		    	<input type="file" name="Uploaded Publication 2" accept="application/pdf" class="form-control-file">
-
+		    	<!-- <input type="file" name="Uploaded Publication 2" accept="application/pdf" class="form-control-file"> -->
+		    	<input type="hidden" onchange="validatePDF(this)" role="uploadcare-uploader" name="Uploaded Publication 2" accept="application/pdf" />
 			</div>
 		  </div> 
 		  
@@ -346,7 +350,7 @@
 		    <input type="checkbox" class="form-check-input" id="exampleCheck1">
 		    <label class="form-check-label" for="exampleCheck1">Check me out</label>
 		  </div> -->
-		  <button align="center" type="submit" class="btn btn-primary btn-lg editBut">Submit</button>
+		  <button align="center" type="submit" class="col-5 btn btn-primary btn-lg editBut">Submit</button>
 		</form>
 	</div>
 
@@ -371,6 +375,7 @@
 		var statmentInterest = document.getElementById('statement_interest');
 		var pastRow = document.getElementById('past_row');
 		var welfareRow = document.getElementById('welfare_row');
+		var formOK = false;
 		optionYesDaily.onclick = function(){
 			labelStatement.style.display = 'none';
 			statmentInterest.style.display = 'none';
@@ -391,6 +396,20 @@
 		optionNoWelfare.onclick = function(){
 			welfareRow.style.display = 'none';
 		}
+		
+
+			function validatePDF(objFileControl){
+		 	var file = objFileControl.value;
+		 	var len = file.length;
+		 	var ext = file.slice(len - 4, len);
+		 	if(ext.toUpperCase() == ".PDF"){
+		   formOK = true;
+ }
+		 	else{
+		   formOK = false;
+		   alert("Only PDF files allowed.");
+ }
+}
 
 
 </script>
