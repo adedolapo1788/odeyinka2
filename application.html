@@ -98,11 +98,11 @@
 			  </div>
 			  <div class="col-3">
 			    <label for="home">Home</label>
-			    <input class="form-control" name="Home Telephone" id="home" type="text" placeholder="Enter Home Number">
+			    <input type="tel" class="form-control" name="Home Telephone" id="home" type="text" placeholder="Enter Home Number">
 			  </div>
 			  <div class="col-3">
 			    <label for="work">Work</label>
-			    <input class="form-control" name="Work Telephone" id="work" type="text" placeholder="Enter Work Number">
+			    <input type="tel" class="form-control" name="Work Telephone" id="work" type="text" placeholder="Enter Work Number">
 			  </div>
 		   </div>
 		   <!-- Email, Personal and Work -->
@@ -122,107 +122,107 @@
 			  </div>
 		   </div>
 		   <div class="form-group col-5">
-		     <input class="form-control" name="" type="text" placeholder="Education: For each degree obtained please provide:" readonly>
+		     <input class="form-control" name="Details about degree provided:" type="text" placeholder="Education: For each degree obtained please provide:" readonly>
 		     <div>
 				    <label for="institution">(a) Institution, Place, Country</label>
-				    <input class="form-control" name="" id="institution" type="text" placeholder="Enter Institution, Place and Country">
+				    <input class="form-control" name="Institution, Place, Country" id="institution" type="text" placeholder="Enter Institution, Place and Country">
 			  </div>
 			  <div>
 			    	<label for="yog">(b) Year of Graduation</label>
-				    <input class="form-control" name="" id="yog" type="number" placeholder="Enter Year of graduation">
+				    <input class="form-control" name="Year of Graduation" id="yog" type="number" placeholder="Enter Year of graduation">
 			  </div>
 			   <div>
 				    <label for="degree">(c) Degree Obtained</label>
-				    <input class="form-control" name="" id="degree" type="text" placeholder="Enter Degree Obtained">
+				    <input class="form-control" name="Degree Obtained" id="degree" type="text" placeholder="Enter Degree Obtained">
 			  </div>
 			  <div>
 				    <label for="qualifications">(d) Other post baccalaureate/Fellowship qualifications</label>
-				    <input class="form-control" name="" id="qualifications" type="text" placeholder="Enter Other Qualifications">
+				    <input class="form-control" name="Other post baccalaureate/Fellowship qualifications" id="qualifications" type="text" placeholder="Enter Other Qualifications">
 			  </div>
 		   </div>
 		  <div class="form-group col-6">
-		   <input class="form-control" name="" type="text" placeholder="Do you use/care for lab animals as part of your current daily work schedule? " readonly>
+		   <input class="form-control" name="Care for lab animals" type="text" placeholder="Do you use/care for lab animals as part of your current daily work schedule? " readonly>
 		   <div class="form-check form-check-inline">
 			  	 <label class="form-check-label" for="checkboxYes">Yes</label>
-			     <input class="form-check-input" type="radio" id="checkboxYes" name="inlineRadioOptions" value="option1">
+			     <input id="option_yes_daily" class="form-check-input" type="radio" id="checkboxYes" name="Response" value="Yes">
 			  </div>
 			  <div class="form-check form-check-inline">
 			  	 <label class="form-check-label" for="checkboxNo">No</label>
-			     <input class="form-check-input" type="radio" id="checkboxNo" name="inlineRadioOptions" value="option1">
+			     <input id="option_no_daily" class="form-check-input" type="radio" id="checkboxNo" name="Response" value="No">
 			  </div>
 		  </div>
 		  <div class="form-group col-6">
-		   <input class="form-control" name="" type="text" placeholder="If No, please provide a statement of your interest in lab animals" readonly>
+		   <input class="form-control" name="Statement of Interest" type="text" placeholder="If No, please provide a statement of your interest in lab animals" readonly>
 		   <div>
-		   	<label for="exampleFormControlTextarea1">Satement of Interest</label>
-    		<textarea class="form-control" name="" id="exampleFormControlTextarea1" row editRows="3"></textarea>
+		   	<label id="label_statement" for="statement_interest">Satement of Interest</label>
+    		<textarea id="statement_interest" class="form-control" name="Statement of Interest in lab Animals" row editRows="3"></textarea>
 		   </div>
 		 </div>
 		  <div class="form-group col-7">
-		   <input class="form-control" name="" type="text" placeholder="Have you used/cared for lab animals as part of your daily work schedule in the past?" readonly>
+		   <input class="form-control" name="Cared for lab animals as daily work schedule?" type="text" placeholder="Have you used/cared for lab animals as part of your daily work schedule in the past?" readonly>
 		    <div class="form-check form-check-inline">
-			  	 <label class="form-check-label" for="checkboxDailyYes">Yes</label>
-			     <input class="form-check-input" type="radio" id="checkboxDailyYes" name="inlineRadioOptions" value="option1">
+			  	 <label class="form-check-label" for="option_yes_past">Yes</label>
+			     <input class="form-check-input" type="radio" id="option_yes_past" name="Response to daily work schedule" value="Yes">
 			  </div>
 			  <div class="form-check form-check-inline">
-			  	 <label class="form-check-label" for="checkboxDailyNo">No</label>
-			     <input class="form-check-input" type="radio" id="checkboxDailyNo" name="inlineRadioOptions" value="option1">
+			  	 <label class="form-check-label" for="option_no_past">No</label>
+			     <input class="form-check-input" type="radio" id="option_no_past" name="Response to daily work schedule" value="No">
 			  </div>
 		  </div>
 		  <div class="form-group col-6">
-		   <input class="form-control" name="" type="text" placeholder="If yes, please state, Institution and Place, Duration" readonly>
-		    <div class="form-group row editRow">
+		   <input class="form-control" name="Institution and Place, Duration" type="text" placeholder="If yes, please state, Institution and Place, Duration" readonly>
+		    <div id="past_row" class="form-group row editRow">
 			  <div class="col-4">
 			    <label for="inst">Institution</label>
-			    <input class="form-control" name="" id="inst" type="text" placeholder="Enter Institution">
+			    <input class="form-control" name="Institution" id="inst" type="text" placeholder="Enter Institution">
 			  </div>
 			  <div class="col-4">
 			    <label for="place">Place</label>
-			    <input class="form-control" name="" id="place" type="text" placeholder="Enter Place">
+			    <input class="form-control" name="Place" id="place" type="text" placeholder="Enter Place">
 			  </div>
 			  <div class="col-4">
 			    <label for="duration">Duration</label>
-			    <input class="form-control" name="" id="duration" type="text" placeholder="Enter Duration">
+			    <input class="form-control" name="Duration" id="duration" type="text" placeholder="Enter Duration">
 			  </div>
 		   </div>
 		 </div>
 		 <div class="form-group col-6">
-		   <input class="form-control" name="" type="text" placeholder="Have you attended any laboratory animal welfare training?" readonly>
+		   <input class="form-control" name="Attended any laboratory animal welfare training?" type="text" placeholder="Have you attended any laboratory animal welfare training?" readonly>
 		    <div class="form-check form-check-inline">
-			  	 <label class="form-check-label" for="checkboxWelfareYes">Yes</label>
-			     <input class="form-check-input" type="radio" id="checkboxWelfareYes" name="inlineRadioOptions" value="option1">
+			  	 <label class="form-check-label" for="option_yes_welfare">Yes</label>
+			     <input class="form-check-input" type="radio" id="option_yes_welfare" name="Response to welfare training" value="Yes">
 			  </div>
 			  <div class="form-check form-check-inline">
-			  	 <label class="form-check-label" for="checkboxWelfareNo">No</label>
-			     <input class="form-check-input" type="radio" id="checkboxWelfareNo" name="inlineRadioOptions" value="option1">
+			  	 <label class="form-check-label" for="option_no_welfare">No</label>
+			     <input class="form-check-input" type="radio" id="option_no_welfare" name="Response to welfare training" value="No">
 			  </div>
 		  </div>
 		  <div class="form-group col-6">
-		   <input class="form-control" name="" type="text" placeholder="If yes, please state" readonly>
-		    <div class="form-group row editRow">
+		   <input class="form-control" name="If yes" type="text" placeholder="If yes, please state the below:" readonly>
+		    <div id="welfare_row" class="form-group row editRow">
 			  <div class="col-4">
 			    <label for="event">Event</label>
-			    <input class="form-control" name="" id="event" type="text" placeholder="Event">
+			    <input class="form-control" name="Event" id="event" type="text" placeholder="Event">
 			  </div>
 			  <div class="col-4">
 			    <label for="date">Date</label>
-			    <input class="form-control" name="" id="date" type="text" placeholder="Date">
+			    <input class="form-control" name="Date" id="date" type="text" placeholder="Date">
 			  </div>
 			  <div class="col-4">
 			    <label for="pla">Place</label>
-			    <input class="form-control" name="" id="pla" type="number" placeholder="Place">
+			    <input class="form-control" name="Place" id="pla" type="number" placeholder="Place">
 			  </div>
 		   </div>
 		 </div>
 		  <div class="form-group col-6">
-		   <input class="form-control" name="" type="text" placeholder="Does your institution have an animal facility?" readonly>
+		   <input class="form-control" name="Institution has animal facility?" type="text" placeholder="Does your institution have an animal facility?" readonly>
 		    <div class="form-check form-check-inline">
 			  	 <label class="form-check-label" for="checkboxFacYes">Yes</label>
-			     <input class="form-check-input" type="radio" id="checkboxFacYes" name="inlineRadioOptions" value="option1">
+			     <input class="form-check-input" type="radio" id="checkboxFacYes" name="Response" value="option1">
 			  </div>
 			  <div class="form-check form-check-inline">
 			  	 <label class="form-check-label" for="checkboxFacNo">No</label>
-			     <input class="form-check-input" type="radio" id="checkboxFacNo" name="inlineRadioOptions" value="option1">
+			     <input class="form-check-input" type="radio" id="checkboxFacNo" name="Response" value="option1">
 			  </div>
 		  </div>
 		  <div class="form-group col-6">
@@ -233,36 +233,36 @@
 	           </div>
 		  </div>
 		  <div class="form-group col-6">
-		   <input class="form-control" name="" type="text" placeholder="Referee 1" readonly>
+		   <input class="form-control" name="Referee 1" type="text" placeholder="Referee 1" readonly>
 		    <div class="form-group row editRow">
 			  <div class="col-4">
 			    <label for="fn">Full Name</label>
-			    <input class="form-control" name="" id="fn" type="text" placeholder="Full Name">
+			    <input class="form-control" name="Full Name" id="fn" type="text" placeholder="Full Name">
 			  </div>
 			  <div class="col-4">
 			    <label for="em">Email Address</label>
-			    <input class="form-control" name="" id="em" type="text" placeholder="Eail Address">
+			    <input class="form-control" name="Email Address" id="em" type="text" placeholder="Email Address">
 			  </div>
 			  <div class="col-4">
 			    <label for="tele">Telephone</label>
-			    <input class="form-control" name="" id="tele" type="text" placeholder="Telephone">
+			    <input class="form-control" name="Telephone" id="tele" type="text" placeholder="Telephone">
 			  </div>
 		   </div>
 		 </div>
 		 <div class="form-group col-6">
-		   <input class="form-control" name="" type="text" placeholder="Referee 2" readonly>
+		   <input class="form-control" name="Referee 2" type="text" placeholder="Referee 2" readonly>
 		    <div class="form-group row editRow">
 			  <div class="col-4">
 			    <label for="fn">Full Name</label>
-			    <input class="form-control" name="" id="fn" type="text" placeholder="Full Name">
+			    <input class="form-control" name="Full Name" id="fn" type="text" placeholder="Full Name">
 			  </div>
 			  <div class="col-4">
 			    <label for="em">Email Address</label>
-			    <input class="form-control" name="" id="em" type="text" placeholder="Eail Address">
+			    <input class="form-control" name="Email Address" id="em" type="text" placeholder="Email Address">
 			  </div>
 			  <div class="col-4">
 			    <label for="tele">Telephone</label>
-			    <input class="form-control" name="" id="tele" type="text" placeholder="Telephone">
+			    <input class="form-control" name="Telephone" id="tele" type="text" placeholder="Telephone">
 			  </div>
 		   </div>
 		 </div>
@@ -274,21 +274,21 @@
 
 		  </div>
 		  <div class="form-group col-6">
-		    <input class="form-control" name="" type="text" placeholder="Current and updated Curriculum Vitae" readonly><br>
-		    <input type="file" accept="application/pdf" class="form-control-file">
+		    <input class="form-control" name="Current and updated Curriculum Vitae" type="text" placeholder="Current and updated Curriculum Vitae" readonly><br>
+		    <input name="Uploaded CV" type="file" accept="application/pdf" class="form-control-file">
 		  </div>
 		  <div class="form-group col-6">
-		    <input class="form-control" name="application" type="text" placeholder="Animal welfare training certificates" readonly><br>
-		    <input type="file" accept="application/pdf" class="form-control-file">
+		    <input class="form-control" name="Animal welfare training certificates" type="text" placeholder="Animal welfare training certificates" readonly><br>
+		    <input type="file" name="Uploaded Animal welfare training certificates" accept="application/pdf" class="form-control-file">
 		  </div>
 		  <div class="form-group row editRow">
 		  	<div class="col-3">
-		    	<input class="form-control" name="application" type="text" placeholder="Publication 1" readonly><br>
-		    	<input type="file" accept="application/pdf" class="form-control-file">
+		    	<input class="form-control" name="Publication 1" type="text" placeholder="Publication 1" readonly><br>
+		    	<input type="file" name="Uploaded Publication 1" accept="application/pdf" class="form-control-file">
 			</div>
 			<div class="col-3">
-		    	<input class="form-control" name="application" type="text" placeholder="Publication 2" readonly><br>
-		    	<input type="file" accept="application/pdf" class="form-control-file">
+		    	<input class="form-control" name="Publication 2" type="text" placeholder="Publication 2" readonly><br>
+		    	<input type="file" name="Uploaded Publication 2" accept="application/pdf" class="form-control-file">
 			</div>
 		  </div> 
 		  
@@ -308,5 +308,41 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/country-region-dropdown-menu/1.2.2/geodatasource-cr.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript">
+	
+
+		var optionYesDaily = document.getElementById('option_yes_daily');
+		var optionNoDaily = document.getElementById('option_no_daily');
+		var optionYesPast = document.getElementById('option_yes_past');
+		var optionNoPast = document.getElementById('option_no_past');
+		var optionYesWelfare = document.getElementById('option_yes_welfare');
+		var optionNoWelfare = document.getElementById('option_no_welfare');
+		var labelStatement = document.getElementById('label_statement');
+		var statmentInterest = document.getElementById('statement_interest');
+		var pastRow = document.getElementById('past_row');
+		var welfareRow = document.getElementById('welfare_row');
+		optionYesDaily.onclick = function(){
+			labelStatement.style.display = 'none';
+			statmentInterest.style.display = 'none';
+		}		
+		optionNoDaily.onclick = function(){
+			labelStatement.style.display = 'block';
+			statmentInterest.style.display = 'block';
+		}
+		optionYesPast.onclick = function(){
+			pastRow.style.display = 'flex';
+		}		
+		optionNoPast.onclick = function(){
+			pastRow.style.display = 'none';
+		}
+		optionYesWelfare.onclick = function(){
+			welfareRow.style.display = 'flex';
+		}		
+		optionNoWelfare.onclick = function(){
+			welfareRow.style.display = 'none';
+		}
+
+
+</script>
 </body>
 </html>
