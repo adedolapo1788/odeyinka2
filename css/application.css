@@ -26,7 +26,8 @@ h2{
 /*Styling for submit button*/
 .editBut{
 	margin-top: 30px;
-	margin-left: 400px;
+	margin-left: 120px;
+  size: 20px;
 }
 .editRow{
 	margin-left: 3px;
