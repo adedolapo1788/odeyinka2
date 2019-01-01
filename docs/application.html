@@ -2,6 +2,13 @@
 <html>
 <head>
 	<title>Application</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/application.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -11,14 +18,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/country-region-dropdown-menu/1.2.2/geodatasource-countryflag.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="gettext" type="application/x-po" href="languages/en/LC_MESSAGES/en.po" />
+	<link rel="stylesheet" type="text/css" href="main.css">
     <!-- <script type="text/javascript" src="assets/js/Gettext.js"></script> -->
 </head>
+<header>
+		<nav class="navbar navbar-inverse">
+				<div class="burger">
+						<div class="burger-middle"></div>
+				</div>
+				<div class="container">
+								<div id="myNavbar">
+										<ul class="nav navbar-nav navbar-right navbar-content">
+												<li class="active"><a href="#">eMentor</a></li>
+												<li><a href="#">Xchange</a></li>
+												<li><a href="#">Contact us</a></li>
+												<li><a href="#">Shopping Cart</a></li>
+												<li><a href="signUp.html">SignUp & Login</a></li>
+										</ul>
+								</div>
+				</div>
+		</nav>
+</header>
 <body>
-	<div align="center"><h2>MEMBERSHIP APPLICATION FORM</h2></div>
-	<div class="centralise">
-		<form class="md-form" action="https://formspree.io/david.odeyinka@yahoo.com" method="POST">
+	<div align="center"><h2 class="connect">MEMBERSHIP APPLICATION FORM</h2></div>
+	<div>
+		<form class="md-form container" action="https://formspree.io/david.odeyinka@yahoo.com" method="POST">
 		  <!-- Drop down for selecting membership  -->
-		  <div class="form-group col-5">
+		  <div class="form-group col-10 ">
 		    <label for="selectMemebership">Select Membership Type</label>
 		    <select class="form-control" name="Membership Type" id="selectMemebership">
 		      <option>Student</option>
@@ -28,54 +54,54 @@
 		  	</select>
   		  </div>
   		  <!-- Full Name --> 
-  		  <div class="form-group col-6">
+  		  <div class="form-group col-10">
 		    <label for="fullName">Full Name</label>
 		    <input type="text" class="form-control" name="Full Name" id="fullName" placeholder="Enter Full Name">
 		  </div>
 		  <!-- Gender and Date of Birth -->
 		  <div class="form-group row editRow">
-		  	<div class="col-3">
+		  	<div class="col-md-12">
 			  <div class="form-check form-check-inline">
 			  	 <label class="form-check-label" for="checkboxMale">Male</label>
 			     <input class="form-check-input" type="radio" id="checkboxMale" name="Gender" value="Male">
-			  </div>
+				</div>
 			  <div class="form-check form-check-inline">
 			  	 <label class="form-check-label" for="checkboxFemale">Female</label>
 			     <input class="form-check-input" type="radio" id="checkboxFemale" name="Gender" value="Female">
 			  </div>
 			</div>
-			<div class="col-4">
+			<div class="col-10">
 			    <label for="dob">Date of Birth</label>
 			    <input type="text" class="form-control" name="Date of Birth" id="dob" placeholder="Enter Date of Birth">
 			  </div>
 		   </div>
 
 		  <!-- Title or position -->
-		   <div class="form-group col-6">
+		   <div class="form-group col-10">
 			    <label for="title">Title or Position</label>
 			    <input type="text" class="form-control" name="Title or Position" id="title" placeholder="Enter Title or Position">
 		   </div>
 		   <!-- Institution or Company -->
-		   <div class="form-group col-6">
+		   <div class="form-group col-10">
 			    <label for="institution">Institution or Company</label>
 			    <input type="text" class="form-control" name="Institution or Company" id="institution" placeholder="Enter Institution or Company">
 		   </div>
 		    <!-- Address-->
-		   <div class="form-group col-6">
+		   <div class="form-group col-10">
 			    <label for="address">Address</label>
 			    <input type="text" class="form-control" name="Address" id="address" placeholder="Enter Address">
 		   </div>
 		   <!-- City, Town and Zip or Postal Code -->
-		   <div class="form-group row editRow">
-			  <div class="col-3">
+		   <div class="form-group row editRow col-10">
+			  <div class="col-md-3 col-xs-3">
 			    <label for="city">City</label>
 			    <input class="form-control" name="City" id="city" type="text" placeholder="Enter City">
 			  </div>
-			  <div class="col-3">
+			  <div class="col-md-3 col-xs-3">
 			    <label for="town">Town</label>
 			    <input class="form-control" name="Town" id="town" type="text" placeholder="Enter Town">
 			  </div>
-			  <div class="col-3">
+			  <div class="col-xs-6 col-md-3">
 			    <label for="zip">Zip or Postal Code</label>
 			    <input class="form-control" name="Zip or Postal Code" id="zip" type="number" placeholder="Enter Zip or Postal Code">
 			  </div>
@@ -90,38 +116,40 @@
 			<!-- Region: <select id="gds-cr-four"></select> -->
 		   </div>
 		   <!-- Telephone, Home and Work -->
-		   <div class="form-group row editRow">
-			  <div class="col-3">
+		   <div class="form-group row editRow col-10">
+			  <div class="col-xs-6 col-md-3">
 			    <label for="telephone">Telephone</label>
 			    <input  type="tel" name="Telephone" class="form-control telphone" id="telephone" type="text" placeholder="Enter Telephone Number">
 			    <span class="input-group-addon">Tel</span>		
 			  </div>
-			  <div class="col-3">
+			  <div class="col-xs-6 col-md-3">
 			    <label for="home">Home</label>
 			    <input class="form-control" name="Home Telephone" id="home" type="text" placeholder="Enter Home Number">
 			  </div>
-			  <div class="col-3">
+			  <div class="col-xs-6 col-md-3">
 			    <label for="work">Work</label>
 			    <input class="form-control" name="Work Telephone" id="work" type="text" placeholder="Enter Work Number">
 			  </div>
 		   </div>
 		   <!-- Email, Personal and Work -->
 		   <div class="form-group row editRow">
-			  <div class="form-group col-3">
-			    <label for="emailAddress">Email address</label>
-			    <input type="email" class="form-control" name="Email Address" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter email">
-			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-		     </div>
-			  <div class="col-3">
-			    <label for="personal">Personal</label>
-			    <input class="form-control" name="Personal Email Address" id="personal" type="email" placeholder="">
-			  </div>
-			  <div class="col-3">
-			  	<label for="work">Work</label>
-			    <input class="form-control" name="Work Email Address" id="work" type="email" placeholder="">
-			  </div>
+				 <div class="col-10">
+					  <div class="form-group col-xs-6 col-md-3">
+								<label for="emailAddress">Email address</label>
+								<input type="email" class="form-control" name="Email Address" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter email">
+								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="col-xs-6 col-md-3">
+								<label for="personal">Personal</label>
+								<input class="form-control" name="Personal Email Address" id="personal" type="email" placeholder="">
+						</div>
+						<div class="col-xs-6 col-md-3">
+								<label for="work">Work</label>
+								<input class="form-control" name="Work Email Address" id="work" type="email" placeholder="">
+						</div>
+				 </div>
 		   </div>
-		   <div class="form-group col-5">
+		   <div class="form-group col-10">
 		     <input class="form-control" name="" type="text" placeholder="Education: For each degree obtained please provide:" readonly>
 		     <div>
 				    <label for="institution">(a) Institution, Place, Country</label>
@@ -140,7 +168,7 @@
 				    <input class="form-control" name="" id="qualifications" type="text" placeholder="Enter Other Qualifications">
 			  </div>
 		   </div>
-		  <div class="form-group col-6">
+		  <div class="form-group col-10">
 		   <input class="form-control" name="" type="text" placeholder="Do you use/care for lab animals as part of your current daily work schedule? " readonly>
 		   <div class="form-check form-check-inline">
 			  	 <label class="form-check-label" for="checkboxYes">Yes</label>
@@ -151,14 +179,14 @@
 			     <input class="form-check-input" type="radio" id="checkboxNo" name="inlineRadioOptions" value="option1">
 			  </div>
 		  </div>
-		  <div class="form-group col-6">
+		  <div class="form-group col-10">
 		   <input class="form-control" name="" type="text" placeholder="If No, please provide a statement of your interest in lab animals" readonly>
 		   <div>
 		   	<label for="exampleFormControlTextarea1">Satement of Interest</label>
     		<textarea class="form-control" name="" id="exampleFormControlTextarea1" row editRows="3"></textarea>
 		   </div>
 		 </div>
-		  <div class="form-group col-7">
+		  <div class="form-group col-10">
 		   <input class="form-control" name="" type="text" placeholder="Have you used/cared for lab animals as part of your daily work schedule in the past?" readonly>
 		    <div class="form-check form-check-inline">
 			  	 <label class="form-check-label" for="checkboxDailyYes">Yes</label>
@@ -169,7 +197,7 @@
 			     <input class="form-check-input" type="radio" id="checkboxDailyNo" name="inlineRadioOptions" value="option1">
 			  </div>
 		  </div>
-		  <div class="form-group col-6">
+		  <div class="form-group col-10">
 		   <input class="form-control" name="" type="text" placeholder="If yes, please state, Institution and Place, Duration" readonly>
 		    <div class="form-group row editRow">
 			  <div class="col-4">
@@ -186,7 +214,7 @@
 			  </div>
 		   </div>
 		 </div>
-		 <div class="form-group col-6">
+		 <div class="form-group col-10">
 		   <input class="form-control" name="" type="text" placeholder="Have you attended any laboratory animal welfare training?" readonly>
 		    <div class="form-check form-check-inline">
 			  	 <label class="form-check-label" for="checkboxWelfareYes">Yes</label>
@@ -197,7 +225,7 @@
 			     <input class="form-check-input" type="radio" id="checkboxWelfareNo" name="inlineRadioOptions" value="option1">
 			  </div>
 		  </div>
-		  <div class="form-group col-6">
+		  <div class="form-group col-10">
 		   <input class="form-control" name="" type="text" placeholder="If yes, please state" readonly>
 		    <div class="form-group row editRow">
 			  <div class="col-4">
@@ -214,7 +242,7 @@
 			  </div>
 		   </div>
 		 </div>
-		  <div class="form-group col-6">
+		  <div class="form-group col-10">
 		   <input class="form-control" name="" type="text" placeholder="Does your institution have an animal facility?" readonly>
 		    <div class="form-check form-check-inline">
 			  	 <label class="form-check-label" for="checkboxFacYes">Yes</label>
@@ -225,14 +253,14 @@
 			     <input class="form-check-input" type="radio" id="checkboxFacNo" name="inlineRadioOptions" value="option1">
 			  </div>
 		  </div>
-		  <div class="form-group col-6">
+		  <div class="form-group col-10">
 			  	<div>Please provide full names, email address and telephone of two referees<br>
 			     i.	A current member of ACURET<br>
 			     ii.	Someone who knows about your work with animals<br>
 			     iii.	If you are a student, HOD/Faculty advisor/Supervisor should be the second referee.
 	           </div>
 		  </div>
-		  <div class="form-group col-6">
+		  <div class="form-group col-10">
 		   <input class="form-control" name="" type="text" placeholder="Referee 1" readonly>
 		    <div class="form-group row editRow">
 			  <div class="col-4">
@@ -249,7 +277,7 @@
 			  </div>
 		   </div>
 		 </div>
-		 <div class="form-group col-6">
+		 <div class="form-group col-10">
 		   <input class="form-control" name="" type="text" placeholder="Referee 2" readonly>
 		    <div class="form-group row editRow">
 			  <div class="col-4">
@@ -266,27 +294,27 @@
 			  </div>
 		   </div>
 		 </div>
-		 <div class="form-group col-6">
+		 <div class="form-group col-10">
 			  	Please attach the following supporting documents (pdf)<br>
 			i.	Current and updated Curriculum Vitae<br>
 			ii.	Animal welfare training certificates (if any)<br>
 			iii.	Two representative publications (if any and relevant)
 
 		  </div>
-		  <div class="form-group col-6">
+		  <div class="form-group col-10">
 		    <input class="form-control" name="" type="text" placeholder="Current and updated Curriculum Vitae" readonly><br>
 		    <input type="file" accept="application/pdf" class="form-control-file">
 		  </div>
-		  <div class="form-group col-6">
+		  <div class="form-group col-10">
 		    <input class="form-control" name="application" type="text" placeholder="Animal welfare training certificates" readonly><br>
 		    <input type="file" accept="application/pdf" class="form-control-file">
 		  </div>
 		  <div class="form-group row editRow">
-		  	<div class="col-3">
+		  	<div class="col-5">
 		    	<input class="form-control" name="application" type="text" placeholder="Publication 1" readonly><br>
 		    	<input type="file" accept="application/pdf" class="form-control-file">
 			</div>
-			<div class="col-3">
+			<div class="col-5">
 		    	<input class="form-control" name="application" type="text" placeholder="Publication 2" readonly><br>
 		    	<input type="file" accept="application/pdf" class="form-control-file">
 			</div>
@@ -309,4 +337,17 @@
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </body>
+<footer class="container-fluid">
+	<div class="container footer-content">
+					<div class="row">
+									<div class=" col-md-3 col-xs-6 text-center"><a href="#" class="anchor">Facebook </a></div>
+									<div class=" col-md-3 col-xs-6 text-center"><a href="#"class="anchor">twitter </a></div>
+									<div class=" col-md-3 col-xs-6 text-center"><a href="#"class="anchor">Youtube</a></div>
+									<div class=" col-md-3 col-xs-6 text-center"><a href="#"class="anchor">Google-share</a></div>
+									
+					</div>
+	</div>
+	<div class="text-center" style="font-size: 15px; margin-bottom: 5px; color: #b0bec5;"><p><span>Copyright &copy; 2018. All rights reserved.</span></p></div>
+</footer>
+<script type="text/javascript" src="JS/main.js"></script>
 </html>
