@@ -13,6 +13,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.acuretlogo{
+  height: 135px;
+}
 .img-fluid{ 
   max-width: 100%;
   height: auto;
@@ -23,13 +26,17 @@ a{
 }
 
 .top-content{
-  font-size:21px;
-  margin-top:25px;
+  margin-top:15px;
   padding:2px;
 }
-.Acuret{
+.top-content p{
+   font-size:15px;
+  border: 1px solid #f1f1f1
+  font-weight:bolder;
+}
+.Acuret a{
   color:#85144B;
-  font-size:22px;
+  font-size:18px;
 }
 footer{
   background: #F8F9FA;
@@ -77,6 +84,10 @@ footer{
   .navbar-nav .dropdown-menu li a:hover{
     background-color:#20232A;
     font-weight: 500;
+  }
+  .secondnav{
+     /*width: 100%;*/
+     background:linear-gradient(to right, #7451a2 , #ee2e24);
   }
 
 
@@ -169,7 +180,19 @@ footer{
         margin-top:25px;
         padding:2px;
       }
+
+      /***********************************Carousel************************************************/
       
+    .carou{
+      height:550px;
+    }
+
+    .meet{
+      color: #85144B;
+      font-weight: bolder;
+      padding-top: 20px;
+
+    }
 
 
 
@@ -179,6 +202,7 @@ footer{
      }
      .connect{
       font-size:20px;
+      margin-bottom: 20px;
     }
     .knowledge{
       font-size: 17px;
@@ -186,8 +210,29 @@ footer{
     .anchor{
       font-size: 16px;
     }
-    
+    .card-title{
+      font-weight: bolder;
+      color: #15416e;
+    }
+    .card-text{
+      font-weight: bolder;
+    }
+    .card-text a{
+      font-size: 12px;
+    }
+    .card-deck {
+      padding: 10px;
+      margin-top: 20px;
+    }
 
+.editRisk{
+  margin-top: 20px;
+}
+.editRisk p{
+ font-weight: bolder;
+}
+.editRisk a{
+ color: #85144B;  
 }
 
 
