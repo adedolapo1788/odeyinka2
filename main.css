@@ -25,6 +25,17 @@ a{
   cursor: pointer;
 }
 
+}
+/*.memb{
+  color: #fff;
+  font-size: 15px;
+  font-weight: bolder;*/
+}
+ .memb:hover{
+    color: #7451a2;
+    text-decoration:none;
+    }
+
 .top-content{
   margin-top:15px;
   padding:2px;
@@ -56,6 +67,7 @@ footer{
     padding:1% 0;
     font-size: 1.1em;
     border:0;
+    height: 15px;
   }
 .current:hover{
     background-color: #61DAFB;
@@ -182,10 +194,10 @@ footer{
       }
 
       /***********************************Carousel************************************************/
+
       
-    .carou{
-      height:550px;
-    }
+
+
 
     .meet{
       color: #85144B;
@@ -205,7 +217,12 @@ footer{
       margin-bottom: 20px;
     }
     .knowledge{
-      font-size: 17px;
+       font-size: 15px;
+      color: #fff;
+      font-weight: bolder;
+    }
+    .carou{
+    height:300px;
     }
     .anchor{
       font-size: 16px;
@@ -285,15 +302,20 @@ footer{
     }
     .connect{
       font-size:35px;
+      font-weight: bold;
+    }
+     .carou{
+      height:550px;
     }
     .knowledge{
-      font-size: 25px;
+      font-size: 15px;
+      color: #fff;
+      font-weight: bolder;
     }
     .anchor{
       font-size: 20px;
     }
     
-
 
 }
 
@@ -302,8 +324,15 @@ footer{
       font-size:35px;
     }
     .knowledge{
-      font-size: 25px;
+      font-size: 15px;
+      color: #fff;
+      font-weight: bolder;
     }
+    .carou{
+      height:650px;
+    }
+    
+     
     .anchor{
       font-size: 20px;
     }
