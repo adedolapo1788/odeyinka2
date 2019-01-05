@@ -101,6 +101,12 @@ footer{
      /*width: 100%;*/
      background:linear-gradient(to right, #7451a2 , #ee2e24);
   }
+  .ctrl-img{
+    height: 150px;
+  }
+  .ctrl-img,.connect{
+    display: inline;
+  }
 
 
 
