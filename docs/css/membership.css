@@ -1,0 +1,95 @@
+ 
+ body {
+    font-size: 25px;
+    line-height: 1.42857143;
+    color: #323232;
+    background-color: #F8F9FA;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+ * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.centralise{
+	margin-left: 200px;
+}
+h2{
+	/*color: linear-gradient(to right, #7451a2 , #ee2e24);*/
+  background: -webkit-linear-gradient(#7451a2, #ee2e24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*color: blue;*/
+}
+.edit-ptwo{
+  display: none;
+}
+.edit-pthree{
+  display: none;
+}
+/*Styling for submit button*/
+.editBut{
+	margin-top: 30px;
+	margin-left: 120px;
+  font-weight: bolder;
+}
+/*.editRow{
+	margin-left: 3px;
+}*/
+/*.row{
+  margin-left: 3px;
+}*/
+.inputfile{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1; 
+}
+/*.form-control-file{
+	border-radius: 15px;
+}*/
+
+/* Mark input boxes that gets an error on validation: */
+.validate.invalid {
+  background-color: #ffdddd;
+}
+
+ /*Hide all steps by default: */
+.tab {
+  display: none;
+}
+/* Mark input boxes that gets an error on validation: */
+.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+/*.tab {
+  display: none;
+}*/
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none; 
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
