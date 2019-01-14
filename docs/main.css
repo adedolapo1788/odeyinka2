@@ -216,6 +216,16 @@ footer{
         padding:2px;
       }
 
+      .readonlies {
+          font-size: 7px;
+          font-weight: 900;
+      }
+      .readonlypast{
+          font-size: 6px;
+          font-weight: 900;
+      }
+    }
+
       /***********************************Carousel************************************************/
 
       
@@ -338,6 +348,15 @@ footer{
     .anchor{
       font-size: 20px;
     }
+    .readonlies {
+font-size: 15px;
+font-weight: 900;
+}
+.readonlypast{
+          font-size: 6px;
+          font-weight: 900;
+      }
+    }
     
 
 }
@@ -358,6 +377,15 @@ footer{
      
     .anchor{
       font-size: 20px;
+    }
+    .readonlies {
+font-size: 15px;
+font-weight: 900;
+}
+.readonlypast{
+          font-size: 6px;
+          font-weight: 900;
+      }
     }
 }
 

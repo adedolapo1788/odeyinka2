@@ -44,7 +44,7 @@
 </header>
 <body>
 <div align="center"><h2 class="connect">MEMBERSHIP APPLICATION FORM</h2></div>
-<form  id="memb_form" class="md-form container" action="https://formspree.io/acuretlearning@gmail.com" method="POST">
+<form  id="memb_form" class="md-form container" action="https://formspree.io/daveux67@gmail.com" method="POST">
 
 <!-- One "tab" for each step in the form: -->
   <fieldset class="tab">
@@ -392,8 +392,8 @@
                 </div>
              </div>
            </div>
-           <div class="form-group col-10">
-             <input class="form-control" name="Details about degree provided" type="text" placeholder="Education: For each degree obtained please provide:" readonly style="font-size: 15px">
+           <div class="form-group col-12">
+             <input class="form-control readonlies" name="Details about degree provided" type="text" placeholder="Education: For each degree obtained please provide:" readonly>
            </div>
              <div>
                 <label for="institution">(a) Institution, Place, Country</label>
@@ -416,7 +416,7 @@
 
       <fieldset class="tab">
         <div class="form-group col-10">
-           <input class="form-control" name="Care for lab animals" type="text" placeholder="Do you use/care for lab animals as part of your current daily work schedule? " readonly style="font-size: 15px">
+           <input class="form-control readonlies" name="Care for lab animals" type="text" placeholder="Do you use/care for lab animals as part of your current daily work schedule? " readonly>
 
            <div class="form-check form-check-inline">
                <label class="form-check-label validate" for="checkboxYes">Yes</label>
@@ -429,7 +429,7 @@
           </div>
 
           <div class="form-group col-10">
-           <input class="form-control" name="Statement of Interest" type="text" placeholder="If No, please provide a statement of your interest in lab animals" readonly style="font-size: 15px">
+           <input class="form-control readonlies" name="Statement of Interest" type="text" placeholder="If No, please provide a statement of your interest in lab animals" readonly>
 
            <div>
             <label id="label_statement" for="statement_interest">Satement of Interest</label>
@@ -438,7 +438,7 @@
          </div>
 
           <div class="form-group col-10">
-           <input class="form-control" name="Cared for lab animals as daily work schedule?" type="text" placeholder="Have you used/cared for lab animals as part of your daily work schedule in the past?" readonly style="font-size: 15px">
+           <input class="form-control readonlypast" name="Cared for lab animals as daily work schedule?" type="text" placeholder="Have you used/cared for lab animals as part of your daily work schedule in the past?" readonly>
 
             <div class="form-check form-check-inline">
                <label class="form-check-label" for="option_yes_past">Yes</label>
@@ -451,7 +451,7 @@
           </div>
 
           <div class="form-group col-10">
-           <input class="form-control" name="Institution and Place, Duration" type="text" placeholder="If yes, please state, Institution and Place, Duration" readonly style="font-size: 15px">
+           <input class="form-control readonlies" name="Institution and Place, Duration" type="text" placeholder="If yes, please state, Institution and Place, Duration" readonly>
             <div id="past_row" class="form-group row editRow" style="margin-left: 3px;">
 
             <div class="col-4">
@@ -470,7 +470,7 @@
          </div>
 
          <div class="form-group col-10">
-           <input class="form-control" name="Attended any laboratory animal welfare training?" type="text" placeholder="Have you attended any laboratory animal welfare training?" readonly style="font-size: 15px">
+           <input class="form-control readonlies" name="Attended any laboratory animal welfare training?" type="text" placeholder="Have you attended any laboratory animal welfare training?" readonly>
 
             <div class="form-check form-check-inline">
                <label class="form-check-label" for="option_yes_welfare">Yes</label>
@@ -483,7 +483,7 @@
           </div>
 
           <div class="form-group col-10">
-           <input class="form-control" name="If yes" type="text" placeholder="If yes, please state the below" readonly style="font-size: 15px">
+           <input class="form-control readonlies" name="If yes" type="text" placeholder="If yes, please state the below" readonly>
             <div id="welfare_row" class="form-group row editRow" style="margin-left: 3px;">
 
             <div class="col-4">
@@ -502,7 +502,7 @@
          </div>
 
           <div class="form-group col-10">
-           <input class="form-control" name="Institution has animal facility?" type="text" placeholder="Does your institution have an animal facility?" readonly style="font-size: 15px">
+           <input class="form-control readonlies" name="Institution has animal facility?" type="text" placeholder="Does your institution have an animal facility?" readonly>
 
             <div class="form-check form-check-inline">
                <label class="form-check-label" for="checkboxFacYes">Yes</label>
@@ -526,7 +526,7 @@
           
 
           <div class="form-group col-10">
-           <input class="form-control" name="Referee 1" type="text" placeholder="Referee 1" readonly style="font-size: 15px">
+           <input class="form-control readonlies" name="Referee 1" type="text" placeholder="Referee 1" readonly>
 
             <div class="form-group row editRow" style="margin-left: 3px;">
             <div class="col-4">
@@ -545,7 +545,7 @@
          </div>
 
          <div class="form-group col-10">
-           <input class="form-control" name="Referee 2" type="text" placeholder="Referee 2" readonly style="font-size: 15px">
+           <input class="form-control readonlies" name="Referee 2" type="text" placeholder="Referee 2" readonly>
 
             <div class="form-group row editRow" style="margin-left: 3px;">
             <div class="col-4">
@@ -572,22 +572,22 @@
           </div>
 
           <div class="form-group col-10">
-            <input class="form-control" name="Current and updated Curriculum Vitae" type="text" placeholder="Current and updated Curriculum Vitae" readonly style="font-size: 15px"><br>
+            <input class="form-control readonlies" name="Current and updated Curriculum Vitae" type="text" placeholder="Current and updated Curriculum Vitae" readonly><br>
             <!-- <input name="Uploaded CV"  onchange="validatePDF(this)" type="file" accept="application/pdf" class="form-control validate-file"> -->
             <input class="validate" type="hidden" onchange="validatePDF(this)" role="uploadcare-uploader" name="Uploaded CV" accept="application/pdf" />
           </div>
           <div class="form-group col-10">
-            <input class="form-control" name="Animal welfare training certificates" type="text" placeholder="Animal welfare training certificates" readonly style="font-size: 15px"><br>
+            <input class="form-control readonlies" name="Animal welfare training certificates" type="text" placeholder="Animal welfare training certificates" readonly><br>
            <input type="hidden" onchange="validatePDF(this)" role="uploadcare-uploader" name="Uploaded Animal welfare training certificates" accept="application/pdf" />
           </div>
           <div class="form-group row editRow" style="margin-left: 3px;">
             <div class="col-5">
-              <input class="form-control" name="Publication 1" type="text" placeholder="Publication 1" readonly style="font-size: 15px"><br>
+              <input class="form-control readonlies" name="Publication 1" type="text" placeholder="Publication 1" readonly><br>
               <!-- <input type="file" name="Uploaded Publication 1" accept="application/pdf" class="form-control validate-file"> -->
               <input type="hidden" onchange="validatePDF(this)" role="uploadcare-uploader" name="Uploaded Publication 1" accept="application/pdf" />
           </div>
           <div class="col-5">
-              <input class="form-control" name="Publication 2" type="text" placeholder="Publication 2" readonly style="font-size: 15px"><br>
+              <input class="form-control readonlies" name="Publication 2" type="text" placeholder="Publication 2" readonly><br>
               <!-- <input type="file" name="Uploaded Publication 2" accept="application/pdf" class="form-control validate-file"> -->
               <input type="hidden" onchange="validatePDF(this)" role="uploadcare-uploader" name="Uploaded Publication 2" accept="application/pdf" />
           </div>
